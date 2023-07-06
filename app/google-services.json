@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "466403972042",
+    "project_id": "serandip-ac906",
+    "storage_bucket": "serandip-ac906.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466403972042:android:e03f0b391eebfb27a77533",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466403972042-15co15qtth5hd911lv3de1626l8qt9eb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPBmf1tQqagtkG7qEf3gpoCSxP2Rvcc1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466403972042-15co15qtth5hd911lv3de1626l8qt9eb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/rIHeader"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        app:layout_constraintTop_toBottomOf="@+id/rIHeader"
+        android:layout_width="220dp"
+        android:layout_height="520dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/shape_right_panel"
+        tools:ignore="MissingConstraints">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/IILoginPanel"
+        app:layout_constraintTop_toBottomOf="@+id/rIHeader"
+        android:background="@drawable/shape_login_panel"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="60dp"
+        android:paddingTop="70dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/rejusername"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="@string/rejusername" />
+
+        <EditText
+            android:id="@+id/rejemail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="@string/rejemail" />
+
+        <EditText
+            android:id="@+id/rejpassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="@string/rejpassword"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/rejconformpassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="@string/rejconformpassword"
+            android:inputType="textPassword" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shape_login_button"
+        android:text="@string/signup"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/IILoginPanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,UnknownId" />
+
+    <TextView
+        android:id="@+id/rejsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:gravity="right"
+        android:text="@string/rejsignup"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/IILoginPanel"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="379dp"
+        android:layout_height="25dp"
+        android:text="@string/tvLogin"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="184dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
